@@ -18,7 +18,7 @@ _This webpage is for a pizza parlor's online menu. It allows the user to select 
   * #### **Input**: cheese, sausage
   * #### **Output**: ["cheese", "sausage"]
 
-* #### **Spec**:  The program uses takes the array values and outputs the corresponding price stored in the price adjustment object.
+* #### **Spec**:  The program takes the array values and outputs the corresponding price stored in the price adjustment object.
   * #### **Input**: ['cheese', 'sausage']
   * #### **Output**:[0, 1.75]
 
