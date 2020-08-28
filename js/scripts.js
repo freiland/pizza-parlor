@@ -29,3 +29,31 @@ let toppingsAdjust = {
 Pizza.prototype.calculatePrice = function () {
   return sizePrice[this.size] + toppingsAdjust[this.toppings];
 }
+
+// UI Logic //
+
+$(document).ready(function() {
+  //attachContactListeners();
+  $("form#question").submit(function(event) {
+    event.preventDefault();
+    //const inputAgeInt = parseInt($("input#age").val());
+    const inputPizzaSize = $("#size").val();
+    const inputTime = $("#time").val();
+    $("input:checkbox[name=toppings]:checked").each(function() {
+      const inputToppings = $(this).val();
+      let topArr = [];
+      topArr.push(inputToppings);
+    });
+    $('#transportation_survey').hide();
+
+  
+    let ageBracket = ageAssign(inputAgeInt);
+  
+    let newTicket = new Ticket (ageBracket, inputMovieTitle, inputTime);
+  
+    let price = newTicket.calculatePrice();
+  
+    $(".answer").text(price);
+  });
+});
+
