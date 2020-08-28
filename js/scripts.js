@@ -51,9 +51,9 @@ $(document).ready(function() {
   //attachContactListeners();
   $("form#question").submit(function(event) {
     event.preventDefault();
-    //const inputAgeInt = parseInt($("input#age").val());
+    
     const inputPizzaSize = $("#size").val();
-    //const inputTime = $("#time").val();
+    
     let topArr = [];
     $("input:checkbox[name=toppings]:checked").each(function() {
       const inputToppings = $(this).val();
@@ -86,7 +86,7 @@ $(document).ready(function() {
       $(".answer").text("$ " + price);
 
     
-    //let ageBracket = ageAssign(inputAgeInt);
+    
   
     
   });

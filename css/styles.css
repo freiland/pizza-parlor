@@ -1,5 +1,19 @@
 .answer {
-  font-size: larger;
+  font-size: x-large;
   color: firebrick;
   font-style: italic;
+}
+
+body {
+  font-family: inherit;
+}
+
+.jumbotron {
+  background-color: rgba(136, 4, 4, 0.685) ;
+  font-family: cursive;
+  font-style: normal;
+}
+
+h2 {
+  font-size: x-large;
 }
