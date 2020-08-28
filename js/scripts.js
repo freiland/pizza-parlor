@@ -85,10 +85,7 @@ $(document).ready(function() {
   
       $(".answer").text("Your total is $" + price);
 
-    
-    
-  
-    
+
   });
 });
 

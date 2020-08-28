@@ -21,7 +21,7 @@ h2 {
 
 img {
   height: auto;
-  width: 250px;
+  width: 278px;
   border:30px black;
   float: right;
 }
@@ -31,4 +31,11 @@ h1 {
 }
 .card {
   padding: 20px;
+}
+
+.btn {
+  background-color: #555555;
+  color: whitesmoke;
+  font-size: 18px;
+  border-radius:5%;
 }
