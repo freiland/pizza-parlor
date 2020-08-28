@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+  
+    <title>Pizza Parlor Pricing</title>
+  
+</head>
+<body class="container">
+  <div class="jumbotron">
+    <h1>Pizza Parlor Pricing!</h1>
+  </div>
+  <h2>Choose from the drop down menus what toppings and size you would like:</h2>
+  <form id="question" class="card">
+
+    <label for="age" class="card-body">Please enter your age:</label>
+    <input id="age" type="text">
+    
+    <label for="size">Choose your pizza size (diameter in inches):</label>
+      <select class="form-control" id="size">
+        <option value="0"><strong>Personal Pie - 8 in</strong></option>
+        <option value="1"><strong>Small - 10 inches</strong></option>
+        <option value="2"><strong>Medium - 12 inches</strong></option>
+        <option value="3"><strong>Large - 16 inches</strong></option>
+        <option value="4"><strong>Extra Large - 18 inches</strong></option>
+        
+      </select>
+
+      <label for="time">Select the time of day that you would like to see the movie:</label>
+      <select class="form-control" id="time">
+        <option value="0">Morning</option>
+        <option value="1">Early afternoon</option>
+        <option value="2">Late afternoon</option>
+        <option value="3">Evening</option>
+        <option value="4">Late night</option>
+        
+      </select>
+
+    
+
+    <button type="submit" class="btn btn-primary"><em>Submit!</em></button>
+  </form>
+  <div class="answer">
+    
+    </div>
+  </div>
+</body>
