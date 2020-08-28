@@ -5,7 +5,8 @@
 }
 
 body {
-  font-family: inherit;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
 }
 
 .jumbotron {
@@ -17,6 +18,8 @@ body {
 
 h2 {
   font-size: x-large;
+  font-style: italic;
+  
 }
 
 img {
