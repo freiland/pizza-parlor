@@ -25,10 +25,23 @@ let toppingsAdjust = {
   "garlic": 0.5,
   "pineapple": 0.75,
 }
+let moneyTop = [];
 
-Pizza.prototype.calculatePrice = function () {
-  return sizePrice[this.size] + toppingsAdjust[this.toppings];
-}
+Pizza.prototype.calculatePrice = function () { this.toppings.forEach(function(topping) {
+  
+  moneyTop.push(toppingsAdjust[topping]);
+  console.log(moneyTop);
+  //let topMoney = toppingsAdjust[topping];
+  //console.log(topMoney);
+  let sumArr = moneyTop.reduce(function(a, b) {
+    return a + b;
+  } ,0);
+  console.log(sumArr);
+  return sizePrice[this.size] + sumArr;
+})
+
+  //return sizePrice[this.size] +;
+};
 
 // UI Logic //
 
@@ -39,22 +52,28 @@ $(document).ready(function() {
     //const inputAgeInt = parseInt($("input#age").val());
     const inputPizzaSize = $("#size").val();
     //const inputTime = $("#time").val();
+    let topArr = [];
     $("input:checkbox[name=toppings]:checked").each(function() {
       const inputToppings = $(this).val();
-      let topArr = [];
+      
       topArr.push(inputToppings);
-      console.log(topArr);
-    });
-    $('#transportation_survey').hide();
+      
 
+    });
+    console.log(topArr);
+    
+    
+    let newPizza = new Pizza (inputPizzaSize, topArr);
+    console.log(newPizza);
   
+      let price = newPizza.calculatePrice();
+  
+      $(".answer").text("$ " + price);
+
+    
     //let ageBracket = ageAssign(inputAgeInt);
   
-    let newPizza = new Pizza (inputPizzaSize, topArr);
-  
-    let price = newTicket.calculatePrice();
-  
-    $(".answer").text("$ " + price);
+    
   });
 });
 
