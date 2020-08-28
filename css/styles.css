@@ -9,9 +9,10 @@ body {
 }
 
 .jumbotron {
-  background-color: rgba(136, 4, 4, 0.685) ;
+  background-color: rgba(166, 7, 7, 0.875) ;
   font-family: cursive;
   font-style: normal;
+  font-size 50px;
 }
 
 h2 {
@@ -19,7 +20,12 @@ h2 {
 }
 
 img {
-  height:200px;
-  width: 300px;
+  height: auto;
+  width: 250px;
   border:30px black;
+  float: right;
+}
+
+h1 {
+  padding:2px;
 }
