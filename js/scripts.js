@@ -25,3 +25,7 @@ let toppingsAdjust = {
   "garlic": 0.5,
   "pineapple": 0.75,
 }
+
+Pizza.prototype.calculatePrice = function () {
+  return sizePrice[this.size] + toppingsAdjust[this.toppings];
+}
