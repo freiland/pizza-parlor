@@ -27,13 +27,23 @@ let toppingsAdjust = {
 }
 
 
-Pizza.prototype.calculatePrice = function () { this.toppings.forEach(function(topping) {
-  let topPrice = toppingsAdjust[topping];
-  console.log(topPrice)
-  
+Pizza.prototype.calculatePrice = function () {
   return sizePrice[this.size];
-  });
-};
+}
+
+
+//{ this.toppings.forEach(function(topping) {
+  //let topPrice = toppingsAdjust[topping];
+  //console.log(topPrice)
+  
+  //return sizePrice[this.size];
+  //});
+//};
+
+
+
+
+   
 
 // UI Logic //
 
@@ -52,13 +62,24 @@ $(document).ready(function() {
       
 
     });
+
+    function toppingPrice (array) {
+      let Arr = [];
+      array.forEach(function(topping) {
+      Arr.push(toppingsAdjust[topping]);
+      })
+      return Arr.reduce(function(a, b) {
+        return a+ b;
+      }, 0);
+    };
     console.log(topArr);
-    
+    let finPrice = toppingPrice(topArr);
+    console.log(finPrice);
     
     let newPizza = new Pizza (inputPizzaSize, topArr);
     console.log(newPizza);
   
-      let price = newPizza.calculatePrice();
+      let price = newPizza.calculatePrice() + finPrice;
   
       $(".answer").text("$ " + price);
 
