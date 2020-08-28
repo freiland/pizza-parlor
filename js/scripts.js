@@ -24,6 +24,4 @@ let toppingsAdjust = {
   "jalapenos": 0.75,
   "garlic": 0.5,
   "pineapple": 0.75,
-  
-  
 }
