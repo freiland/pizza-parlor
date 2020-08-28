@@ -73,7 +73,9 @@ $(document).ready(function() {
       }, 0);
     };
     console.log(topArr);
+    
     let finPrice = toppingPrice(topArr);
+    
     console.log(finPrice);
     
     let newPizza = new Pizza (inputPizzaSize, topArr);
