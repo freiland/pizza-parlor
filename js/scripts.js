@@ -83,7 +83,7 @@ $(document).ready(function() {
   
       let price = newPizza.calculatePrice() + finPrice;
   
-      $(".answer").text("$ " + price);
+      $(".answer").text("Your total is $" + price);
 
     
     
