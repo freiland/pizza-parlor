@@ -29,11 +29,10 @@ let toppingsAdjust = {
 
 Pizza.prototype.calculatePrice = function () { this.toppings.forEach(function(topping) {
   let topPrice = toppingsAdjust[topping];
-  console.log(topPrice);
-  return sizePrice[this.size];
+  console.log(topPrice)
   
-  })
   return sizePrice[this.size];
+  });
 };
 
 // UI Logic //
