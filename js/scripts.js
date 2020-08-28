@@ -20,27 +20,20 @@ let toppingsAdjust = {
   "cheese": 0,
   "pepperonni": 1.50,
   "sausage": 2,
-  "onions and peppers": 1.25,
+  "onions": 1.25,
   "jalapenos": 0.75,
   "garlic": 0.5,
   "pineapple": 0.75,
 }
-let moneyTop = [];
+
 
 Pizza.prototype.calculatePrice = function () { this.toppings.forEach(function(topping) {
+  let topPrice = toppingsAdjust[topping];
+  console.log(topPrice);
+  return sizePrice[this.size];
   
-  moneyTop.push(toppingsAdjust[topping]);
-  console.log(moneyTop);
-  //let topMoney = toppingsAdjust[topping];
-  //console.log(topMoney);
-  let sumArr = moneyTop.reduce(function(a, b) {
-    return a + b;
-  } ,0);
-  console.log(sumArr);
-  return sizePrice[this.size] + sumArr;
-})
-
-  //return sizePrice[this.size] +;
+  })
+  return sizePrice[this.size];
 };
 
 // UI Logic //
