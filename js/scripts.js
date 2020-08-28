@@ -38,22 +38,23 @@ $(document).ready(function() {
     event.preventDefault();
     //const inputAgeInt = parseInt($("input#age").val());
     const inputPizzaSize = $("#size").val();
-    const inputTime = $("#time").val();
+    //const inputTime = $("#time").val();
     $("input:checkbox[name=toppings]:checked").each(function() {
       const inputToppings = $(this).val();
       let topArr = [];
       topArr.push(inputToppings);
+      console.log(topArr);
     });
     $('#transportation_survey').hide();
 
   
-    let ageBracket = ageAssign(inputAgeInt);
+    //let ageBracket = ageAssign(inputAgeInt);
   
-    let newTicket = new Ticket (ageBracket, inputMovieTitle, inputTime);
+    let newPizza = new Pizza (inputPizzaSize, topArr);
   
     let price = newTicket.calculatePrice();
   
-    $(".answer").text(price);
+    $(".answer").text("$ " + price);
   });
 });
 
