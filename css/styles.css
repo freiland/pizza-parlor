@@ -17,3 +17,9 @@ body {
 h2 {
   font-size: x-large;
 }
+
+img {
+  height:200px;
+  width: 300px;
+  border:30px black;
+}

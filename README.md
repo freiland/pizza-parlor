@@ -40,7 +40,7 @@ _This webpage is for a pizza parlor's online menu. It allows the user to select 
 
 _No known bugs for this program_
 
-## Support and Contact Information_
+## Support and Contact Information
 
 _If you encounter any problems with this software, or would like to contribute, please contact me at freiland@email.arizona.edu_
 
